@@ -1,0 +1,130 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce":"none" // 建议禁止bounce效果
+				}
+			}
+		},
+		{
+			"path": "pages/book-video/book-video",
+			"style": {
+				"navigationBarTitleText": "书影音",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/group/group",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "小组",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/market/market",
+			"style": {
+				"navigationBarTitleText": "市集",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+
+						]
+					},
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+			}
+		},
+		// #ifdef APP-PLUS || H5 || MP-ALIPAY
+		{
+			"path": "pages/home-page/home-page",
+			"style": {
+				"navigationBarTitleText": "个人主页",
+				"navigationBarBackgroundColor": "#4fca4f",
+				"app-plus": {
+					"titleNView": {
+						// "type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+						"buttons": [{
+							"type": "share"
+						}]
+					},
+					"bounce": "none" //删除此项: mescroll-body支持iOS回弹
+				}
+				// "transparentTitle": "auto"
+			}
+		}
+		// #endif
+		, {
+			"path": "pages/template/yiqing-demo/yiqing-demo",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "某瓣APP",
+		"navigationBarBackgroundColor": "#4fca4f",
+		"backgroundColor": "#FFFFFF"
+	},
+	// tabbar
+	"tabBar": {
+		"color": "#969696",
+		"selectedColor": "#505050",
+		"borderStyle": "black",
+		"backgroundColor": "#F9F9F9",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home@eds.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/book-video/book-video",
+				"iconPath": "static/tabbar/book.png",
+				"selectedIconPath": "static/tabbar/book@ed.png",
+				"text": "书影音"
+			},
+			{
+				"pagePath": "pages/group/group",
+				"iconPath": "static/tabbar/group.png",
+				"selectedIconPath": "static/tabbar/group@ed.png",
+				"text": "小组"
+			}, {
+				"pagePath": "pages/market/market",
+				"iconPath": "static/tabbar/market.png",
+				"selectedIconPath": "static/tabbar/market@ed.png",
+				"text": "市集"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine@ed.png",
+				"text": "我的"
+			}
+		]
+	}
+}
