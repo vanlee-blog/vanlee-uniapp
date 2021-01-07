@@ -1,4 +1,4 @@
-# demo
+# uniapp-ts-demo
 
 ## Project setup
 ```
