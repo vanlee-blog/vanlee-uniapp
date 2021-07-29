@@ -1,4 +1,4 @@
-# demo
+# uniapp-memory
 
 ## Project setup
 ```
