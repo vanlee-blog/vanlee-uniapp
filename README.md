@@ -1,3 +1,1 @@
-## update
-
-- 初始化項目 配置格式化
+- add animate.css

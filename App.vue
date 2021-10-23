@@ -1,17 +1,12 @@
+
 <script>
 	export default {
-		onLaunch: function() {
-			console.log('App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
-		}
+		name:'VastApp'
 	}
 </script>
 
 <style>
-	/*每个页面公共css */
+	/* 动画样式 */
+  /* @import "animate.css/animate.css"; */
+  @import url("/common/styles/animate.css");
 </style>

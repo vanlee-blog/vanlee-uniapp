@@ -1,23 +1,20 @@
 <template>
-  <view class="content">
-    <button type="default" @click="handleNow">记录一下</button>
-  </view>
+  <view class="test">我来了~</view>
 </template>
 
 <script>
 export default {
-  data() {
+  name: 'Index',
+  data(){
     return {
-      title: 'Hello'
-    };
-  },
-  onLoad() {},
-  methods: {
-    handleNow() {
-      console.log(123);
+      msg:'123'
     }
   }
 };
 </script>
-
-<style></style>
+<style lang="scss">
+.test{
+  animation: backInDown;
+  		animation-duration: 2s;
+}
+</style>
